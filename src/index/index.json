@@ -1,4 +1,6 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "bar-item": "../components/bar-item/index"
+  }
 }
