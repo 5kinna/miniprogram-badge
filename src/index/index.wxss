@@ -1,0 +1,6 @@
+@import '../less/common.wxss';
+.__tabbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
