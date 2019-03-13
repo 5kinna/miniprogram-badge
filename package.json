@@ -13,7 +13,15 @@
     "test": "jest ./test/* --silent --bail",
     "coverage": "jest ./test/* --coverage --bail",
     "lint": "eslint \"src/**/*.js\"",
-    "lint-tools": "eslint \"tools/**/*.js\" --rule \"import/no-extraneous-dependencies: false\""
+    "lint-tools": "eslint \"tools/**/*.js\" --rule \"import/no-extraneous-dependencies: false\"",
+    "precommit": "lint-staged",
+    "prepush": "npm run test"
+  },
+  "lint-staged": {
+    "*.js": "eslint",
+    "*.wxss": "stylelint",
+    "*.json": "jsonlint --quiet",
+    "*.md": "markdownlint --config .markdownlint.json"
   },
   "miniprogram": "miniprogram_dist",
   "jest": {
@@ -45,7 +53,9 @@
     "babel-loader": "^7.1.5",
     "babel-plugin-module-resolver": "^3.2.0",
     "babel-preset-env": "^1.7.0",
+    "chalk": "^2.4.2",
     "colors": "^1.3.1",
+    "cross-var": "^1.1.0",
     "eslint": "^5.14.1",
     "eslint-config-airbnb-base": "13.1.0",
     "eslint-loader": "^2.1.2",
@@ -61,7 +71,13 @@
     "gulp-sourcemaps": "^2.6.5",
     "husky": "^1.3.1",
     "jest": "^23.5.0",
+    "jsonlint": "^1.6.3",
+    "lint-staged": "^8.1.5",
+    "markdownlint": "^0.12.0",
     "miniprogram-simulate": "^1.0.0",
+    "scripty": "^1.9.1",
+    "shelljs": "^0.8.3",
+    "stylelint": "^9.10.1",
     "through2": "^2.0.3",
     "vinyl": "^2.2.0",
     "webpack": "^4.29.5",
