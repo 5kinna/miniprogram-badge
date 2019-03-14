@@ -1,46 +1,34 @@
 module.exports = {
-  'extends': [
-    'airbnb-base',
-    'plugin:promise/recommended'
-  ],
-  'parserOptions': {
-    'ecmaVersion': 9,
-    'ecmaFeatures': {
-      'jsx': false
+  extends: ['airbnb-base', 'plugin:promise/recommended'],
+  parserOptions: {
+    ecmaVersion: 9,
+    ecmaFeatures: {
+      jsx: false,
     },
-    'sourceType': 'module'
+    sourceType: 'module',
   },
-  'env': {
-    'es6': true,
-    'node': true,
-    'jest': true
+  env: {
+    es6: true,
+    node: true,
+    jest: true,
   },
-  'plugins': [
-    'import',
-    'node',
-    'promise'
-  ],
-  'rules': {
+  plugins: ['import', 'node', 'promise'],
+  rules: {
     'arrow-parens': 'off',
-    'comma-dangle': [
-      'error',
-      'only-multiline'
-    ],
-    'complexity': ['error', 10],
+    'comma-dangle': ['error', 'only-multiline'],
+    complexity: ['error', 10],
     'func-names': 'off',
     'global-require': 'off',
-    'handle-callback-err': [
-      'error',
-      '^(err|error)$'
-    ],
+    'handle-callback-err': ['error', '^(err|error)$'],
     'import/no-unresolved': [
       'error',
       {
-        'caseSensitive': true,
-        'commonjs': true,
-        'ignore': ['^[^.]']
-      }
+        caseSensitive: true,
+        commonjs: true,
+        ignore: ['^[^.]'],
+      },
     ],
+    'import/no-extraneous-dependencies': ['error', {devDependencies: true}],
     'import/prefer-default-export': 'off',
     'linebreak-style': 'off',
     'no-catch-shadow': 'error',
@@ -54,19 +42,16 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'node/no-deprecated-api': 'error',
     'node/process-exit-as-throw': 'error',
-    'object-curly-spacing': [
-      'error',
-      'never'
-    ],
+    'object-curly-spacing': ['error', 'never'],
     'operator-linebreak': [
       'error',
       'after',
       {
-        'overrides': {
+        overrides: {
           ':': 'before',
-          '?': 'before'
-        }
-      }
+          '?': 'before',
+        },
+      },
     ],
     'prefer-arrow-callback': 'off',
     'prefer-destructuring': 'off',
@@ -75,22 +60,19 @@ module.exports = {
       1,
       'as-needed',
       {
-        'unnecessary': true
-      }
+        unnecessary: true,
+      },
     ],
-    'semi': [
-      'error',
-      'never'
-    ]
+    semi: ['error', 'never'],
   },
-  'globals': {
-    'window': true,
-    'document': true,
-    'App': true,
-    'Page': true,
-    'Component': true,
-    'Behavior': true,
-    'wx': true,
-    'getCurrentPages': true,
-  }
+  globals: {
+    window: true,
+    document: true,
+    App: true,
+    Page: true,
+    Component: true,
+    Behavior: true,
+    wx: true,
+    getCurrentPages: true,
+  },
 }
