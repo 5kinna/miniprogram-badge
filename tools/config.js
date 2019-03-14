@@ -24,7 +24,7 @@ module.exports = {
 
   wxss: {
     less: true, // 使用 less 来编写 wxss
-    sourcemap: true, // 生成 less sourcemap
+    sourcemap: false, // 生成 less sourcemap
   },
 
   webpack: {

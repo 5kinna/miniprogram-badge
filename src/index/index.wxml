@@ -1,5 +1,3 @@
-<view class="__tabbar">
-  <block wx:for="{{list}}" wx:key="index">
-    <bar-item />
-  </block>
-</view>
+<cover-view class="__tabbar" style="height:{{height}}rpx;">
+  <bar-item item="{{item}}" wx:for="{{list}}" wx:key="index" class="__tabbar-item" />
+</cover-view>

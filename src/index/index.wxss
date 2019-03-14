@@ -3,4 +3,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: red;
+  &-item {
+    flex: 1;
+    text-align: center;
+  }
 }

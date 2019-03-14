@@ -17,6 +17,14 @@ Component({
     flag: {
       type: String,
     },
+    color: {
+      type: String,
+      value: '#f6f7f8',
+    },
+    selectedColor: {
+      type: String,
+      value: '#3984d0',
+    },
   },
   data: {},
   lifetimes: {
