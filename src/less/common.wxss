@@ -1,3 +1,3 @@
-.__tabbar {
-  font-size: 20px;
+view {
+  background: red;
 }

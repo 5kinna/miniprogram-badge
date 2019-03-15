@@ -1,6 +1,0 @@
-<navigator url="{{item.pagePath}}" open-type="reLaunch" class="__tabbar-nav" hover-class="none" hover-stop-propagation="false">
-  <view class="__tabbar-item {{active===index?'active':''}}">
-    <view class="__tabbar-icon {{item.iconPath}}"></view>
-    <text class="__tabbar-text" style="color:{{color}};">{{item.text}}</text>
-  </view>
-</navigator>

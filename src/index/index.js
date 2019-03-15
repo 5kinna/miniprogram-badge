@@ -1,12 +1,15 @@
 Component({
   properties: {
-    list: {
-      type: Array,
-      value: [],
-    },
-    height: {
+    count: {
       type: Number,
-      value: 96,
+      value: 0,
+    },
+    over: {
+      type: Number,
+      value: 99,
+    },
+    flag: {
+      type: String,
     },
   },
   data: {},
