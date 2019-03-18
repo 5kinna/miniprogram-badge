@@ -1,1 +1,40 @@
 @import '../less/common.wxss';
+.badge {
+  position: relative;
+  display: inline-block;
+  margin: 12px;
+}
+
+.badge-text {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(100%) translateY(-50%);
+  border-radius: 20px;
+  padding: 0 10px;
+  font-size: 12px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.badge-dot {
+  position: absolute;
+  right: -4px;
+  top: -2px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  animation: breath 2s infinite ease-in-out;
+}
+
+@keyframes breath {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

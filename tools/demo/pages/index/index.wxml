@@ -1,3 +1,7 @@
 <view class="page-index">
-  <comp></comp>
+  <view>
+    <comp type="dot" bg="red" breath><text>头冷</text></comp>
+    <comp bg="red" color="#fff" count="{{11}}"><text>落枕</text></comp>
+    <comp bg="red" color="red" bg="#fff" count="{{199}}"><text>轻度落枕</text></comp>
+  </view>
 </view>

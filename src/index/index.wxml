@@ -1,1 +1,5 @@
-<view>右上角徽章</view>
+<view class="badge">
+  <text wx:if="{{type === 'text'}}" class="badge-text" style="color:{{color}};background: {{bg}};borderColor:{{color}};">{{value}}</text>
+  <view wx:else class="badge-dot" style="background: {{bg}}"></view>
+  <slot></slot>
+</view>

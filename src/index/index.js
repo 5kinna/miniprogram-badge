@@ -2,18 +2,43 @@ Component({
   properties: {
     count: {
       type: Number,
-      value: 0,
+      value: 199,
     },
     over: {
       type: Number,
       value: 99,
     },
-    flag: {
+    color: {
       type: String,
+      value: '#fff'
     },
+    bg: {
+      type: String,
+      value: 'red'
+    },
+    type: {
+      type: String,
+      value: 'text'
+    },
+    // 是否会呼吸
+    isBreath: {
+      type: Boolean,
+      value: false
+    }
   },
-  data: {},
+  data: {
+    value: ''
+  },
   lifetimes: {
-    attached() {},
+    attached() {
+      const newVal = this.properties.count > this.properties.over ? `${this.properties.over}+` : `${this.properties.count}`
+      // 在组件实例进入页面节点树时执行
+      this.setData({
+        value: newVal
+      })
+    },
+    detached() {
+      // 在组件实例被从页面节点树移除时执行
+    },
   },
 })
