@@ -7,34 +7,22 @@
 
 .badge-text {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 20rpx;
+  top: 7rpx;
   transform: translateX(100%) translateY(-50%);
   border-radius: 20px;
-  padding: 0 10px;
-  font-size: 12px;
-  border-width: 1px;
-  border-style: solid;
+  padding: 4rpx 8rpx;
+  font-size: 20rpx;
+  color: #fff;
+  background: red;
 }
 
 .badge-dot {
   position: absolute;
-  right: -4px;
-  top: -2px;
+  right: -6rpx;
+  top: 4rpx;
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  animation: breath 2s infinite ease-in-out;
-}
-
-@keyframes breath {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.4);
-  }
-  100% {
-    transform: scale(1);
-  }
+  background: red;
 }

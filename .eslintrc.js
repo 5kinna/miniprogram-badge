@@ -15,6 +15,9 @@ module.exports = {
   plugins: ['import', 'node', 'promise'],
   rules: {
     'arrow-parens': 'off',
+    'no-await-in-loop': 'off',
+    'no-restricted-syntax': 'off',
+    'promise/always-return': 'off',
     'comma-dangle': ['error', 'only-multiline'],
     complexity: ['error', 10],
     'func-names': 'off',

@@ -4,5 +4,6 @@ module.exports = {
     'at-rule-empty-line-before': null,
     'no-missing-end-of-source-newline': null,
     'rule-empty-line-before': null,
+    'unit-no-unknown': null,
   },
 }

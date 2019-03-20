@@ -1,4 +1,5 @@
 Component({
+  externalClasses: ['my-badge'],
   properties: {
     count: {
       type: Number,
@@ -8,37 +9,9 @@ Component({
       type: Number,
       value: 99,
     },
-    color: {
-      type: String,
-      value: '#fff'
-    },
-    bg: {
-      type: String,
-      value: 'red'
-    },
-    type: {
-      type: String,
-      value: 'text'
-    },
-    // 是否会呼吸
-    isBreath: {
+    dot: {
       type: Boolean,
-      value: false
-    }
-  },
-  data: {
-    value: ''
-  },
-  lifetimes: {
-    attached() {
-      const newVal = this.properties.count > this.properties.over ? `${this.properties.over}+` : `${this.properties.count}`
-      // 在组件实例进入页面节点树时执行
-      this.setData({
-        value: newVal
-      })
-    },
-    detached() {
-      // 在组件实例被从页面节点树移除时执行
+      value: false,
     },
   },
 })

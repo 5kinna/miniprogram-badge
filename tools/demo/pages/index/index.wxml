@@ -1,7 +1,13 @@
 <view class="page-index">
   <view>
-    <comp type="dot" bg="red" breath><text>头冷</text></comp>
-    <comp bg="red" color="#fff" count="{{11}}"><text>落枕</text></comp>
-    <comp bg="red" color="red" bg="#fff" count="{{199}}"><text>轻度落枕</text></comp>
+    <comp dot my-badge="badge-breath">
+      <text>头冷</text>
+    </comp>
+    <comp count="{{11}}">
+      <text>落枕</text>
+    </comp>
+    <comp count="{{199}}" over="{{100}}" my-badge="badge-green">
+      <text>轻度落枕</text>
+    </comp>
   </view>
 </view>
