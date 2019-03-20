@@ -14,8 +14,7 @@
     "coverage": "jest ./test/* --coverage --bail",
     "lint": "eslint \"src/**/*.js\"",
     "lint-tools": "eslint \"tools/**/*.js\" --rule \"import/no-extraneous-dependencies: false\"",
-    "precommit": "lint-staged",
-    "prepush": "npm t"
+    "precommit": "lint-staged"
   },
   "lint-staged": {
     "*.js": "eslint --fix",
