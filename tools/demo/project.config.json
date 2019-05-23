@@ -17,6 +17,8 @@
 	"appid": "wxbf3abebda30b1e25",
 	"projectname": "miniprogram-tabbar",
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

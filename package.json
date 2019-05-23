@@ -13,8 +13,7 @@
     "test": "jest ./test/* --silent --bail",
     "coverage": "jest ./test/* --coverage --bail",
     "lint": "eslint \"src/**/*.js\"",
-    "lint-tools": "eslint \"tools/**/*.js\" --rule \"import/no-extraneous-dependencies: false\"",
-    "precommit": "lint-staged"
+    "lint-tools": "eslint \"tools/**/*.js\" --rule \"import/no-extraneous-dependencies: false\""
   },
   "lint-staged": {
     "*.js": "eslint --fix",
@@ -39,6 +38,7 @@
   },
   "husky": {
     "hooks": {
+      "pre-commit": "lint-staged",
       "commit-msg": "commitlint -e $GIT_PARAMS"
     }
   },
@@ -68,13 +68,14 @@
     "gulp-rename": "^1.4.0",
     "gulp-sourcemaps": "^2.6.5",
     "husky": "^1.3.1",
+    "j-component": "^1.1.2",
     "jest": "^23.5.0",
     "jsonlint": "^1.6.3",
     "lesslint": "^1.0.3",
     "lint-staged": "^8.1.5",
     "markdownlint": "^0.12.0",
     "markdownlint-cli": "^0.14.0",
-    "miniprogram-simulate": "^1.0.0",
+    "miniprogram-simulate": "^1.0.1",
     "scripty": "^1.9.1",
     "shelljs": "^0.8.3",
     "stylelint": "^9.10.1",

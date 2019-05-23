@@ -3,15 +3,15 @@ Component({
   properties: {
     count: {
       type: Number,
-      value: 199,
+      value: 0
     },
     over: {
-      type: Number,
-      value: 99,
+      type: [Number, String],
+      value: 99
     },
     dot: {
       type: Boolean,
-      value: false,
-    },
-  },
+      value: false
+    }
+  }
 })
