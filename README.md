@@ -1,10 +1,52 @@
 # miniprogram-badge
 
+## 使用效果
+
+![badge](./docs/badge.jpg)
+
+> PS：此组件默认只携带最简单样式。
+
 ## 功能列表
 
 - [x] 右上角显示点
 - [x] 显示数字
 - [x] 超过一定数值显示 数值+
+
+## 使用方法
+
+1. 安装 miniprogram-badge
+
+```
+npm i miniprogram-badge
+```
+
+2. 在需要使用 miniprogram-badge 的页面 page.json 中添加 miniprogram-badge 自定义组件配置
+
+```json
+{
+  "usingComponents": {
+    "badge": "miniprogram-badge"
+  }
+}
+```
+
+3. WXML 文件中引用 miniprogram-badge
+
+miniprogram-badge 提供一个`<slot>`节点，用于承载组件引用时提供的子节点。
+
+```xml
+<badge count="{{11}}">
+  <text>落枕</text>
+</badge>
+```
+
+**miniprogram-badge 的属性介绍如下：**
+
+| 属性名 | 类型             | 单位 | 默认值 | 是否必须 | 说明       |
+| ------ | ---------------- | ---- | ------ | -------- | ---------- |
+| dot    | Boolean          | 空   | false  | 否       | 是否显示点 |
+| count  | Number           | 空   | 0      | 否       | 显示数字   |
+| over   | [Number, String] | 空   | 99     | 否       | 最大临界值 |
 
 ## 单元测试
 
