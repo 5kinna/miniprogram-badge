@@ -75,7 +75,7 @@
     "lint-staged": "^8.1.5",
     "markdownlint": "^0.12.0",
     "markdownlint-cli": "^0.14.0",
-    "miniprogram-simulate": "^1.0.1",
+    "miniprogram-simulate": "^1.0.2",
     "scripty": "^1.9.1",
     "shelljs": "^0.8.3",
     "stylelint": "^9.10.1",

@@ -3,6 +3,8 @@ const _ = require('./utils')
 describe('badge render', () => {
   // 加载自定义组件，返回 componentId
   // Q:同一个组件只能加载一次，否则会返回undefined
+  // miniprogram-simulate升级到1.0.2
+  // https://github.com/wechat-miniprogram/miniprogram-simulate/issues/13
   const componentId = _.load('/index', 'comp')
   // 默认样式
   it('default', () => {
